@@ -498,7 +498,172 @@ nav {
   font-size: 15px;
   padding-bottom: 60px;
   color: #fff;
-  width: 50%;
+  width: 40%;
+}
+
+#choose .choose-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#choose .choose-block > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+#choose .choose-block > div .choose-items {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+  max-width: 30%;
+  background: #00458f;
+  border-color: #00458f;
+  border-radius: 10px;
+  margin: 0 15px;
+  padding: 15px 0;
+  text-align: center;
+  color: #fff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 1.5rem;
+}
+
+#choose .choose-block > div .choose-items .fa-gem {
+  font-size: 48px;
+  padding-top: 15px;
+  color: #bfddfe;
+}
+
+#choose .choose-block > div .choose-items .fa-language {
+  font-size: 48px;
+  padding-top: 15px;
+  color: #bfddfe;
+}
+
+#choose .choose-block > div .choose-items .fa-object-group {
+  font-size: 48px;
+  padding-top: 15px;
+  color: #bfddfe;
+}
+
+#choose .choose-block > div .choose-items > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 1.25rem;
+}
+
+#choose .choose-block > div .choose-items > div h3 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+#choose .choose-block > div .choose-items > div p {
+  font-size: 15px;
+  color: #d8eafe;
+  padding: 0;
+  margin: 0 0 30px 0;
+}
+
+#choose .choose-block > div .choose-items > div a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#choose .choose-block > div .choose-items > div a:hover {
+  border-bottom: #00458f solid 2px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#choose .choose-block .numbers {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-right: 15px;
+  margin-left: 15px;
+  width: 100%;
+}
+
+#choose .choose-block .numbers > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+          flex: 1 1 25%;
+  max-width: 25%;
+  text-align: center;
+}
+
+#choose .choose-block .numbers > div > span {
+  font-weight: bolder;
+  font-size: 48px;
+  display: block;
+  color: #fff;
+}
+
+#choose .choose-block .numbers > div > p {
+  padding: 1rem;
+  font-size: 14px;
+  color: #cce5ff;
+}
+
+#portfolio {
+  padding: 60px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#portfolio .portfolio-header {
+  text-align: center;
+}
+
+#portfolio .portfolio-header h2 {
+  font-size: 36px;
+  font-weight: 600;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+#portfolio .portfolio-header > div {
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #fff;
+  width: 40%;
 }
 
 @media all and (max-width: 767) {

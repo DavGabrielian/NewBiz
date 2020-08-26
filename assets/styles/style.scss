@@ -374,9 +374,144 @@ nav {
       font-size: 15px;
       padding-bottom: 60px;
       color: #fff;
-      width: 50%;
+      width: 40%;
     }
   }
+
+  .choose-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    > div {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+
+      .choose-items {
+        flex: 0 0 30%;
+        max-width: 30%;
+        background: #00458f;
+        border-color: #00458f;
+        border-radius: 10px;
+        margin: 0 15px;
+        padding: 15px 0;
+        text-align: center;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+        margin-bottom: 1.5rem;
+
+        .fa-gem {
+          font-size: 48px;
+          padding-top: 15px;
+          color: #bfddfe;
+        }
+
+        .fa-language {
+          font-size: 48px;
+          padding-top: 15px;
+          color: #bfddfe;
+        }
+
+        .fa-object-group {
+          font-size: 48px;
+          padding-top: 15px;
+          color: #bfddfe;
+        }
+
+        > div {
+          flex: 1 1 auto;
+          padding: 1.25rem;
+
+          h3 {
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+          }
+
+          p {
+            font-size: 15px;
+            color: #d8eafe;
+            padding: 0;
+            margin: 0 0 30px 0;
+          }
+          a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: 600;
+            display: inline-block;
+            cursor: pointer;
+            transition: 0.5s;
+
+            &:hover {
+              border-bottom: #00458f solid 2px;
+              transition: 0.5s;
+            }
+          }
+        }
+      }
+    }
+
+    .numbers {
+      padding-top: 40px;
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: 15px;
+      margin-left: 15px;
+      width: 100%;
+
+      > div {
+        flex: 1 1 25%;
+        max-width: 25%;
+        text-align: center;
+        > span {
+          font-weight: bolder;
+          font-size: 48px;
+          display: block;
+          color: #fff;
+        }
+        > p {
+          padding: 1rem;
+          font-size: 14px;
+          color: #cce5ff;
+        }
+      }
+    }
+  }
+}
+
+
+
+#portfolio {
+  padding: 60px 0;
+  width: 100%;
+  @include flexbox(column);
+  @include secMarPad;
+
+  .portfolio-header {
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+      font-weight: 600;
+      position: relative;
+      margin: 0 0 20px 0;
+    }
+    > div {
+      margin: auto;
+      font-size: 15px;
+      padding-bottom: 60px;
+      color: #fff;
+      width: 40%;
+
+      button {
+      }
+    }
+  }
+
 }
 
 @media all and (max-width: 767) {
