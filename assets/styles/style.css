@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
+  line-height: 1.2;
   overflow-x: hidden;
 }
 
@@ -25,19 +26,24 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-flex: wrap;
+  -ms-flex: wrap;
+  flex: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   height: 80px;
   background-color: white;
   z-index: 1;
-  -webkit-box-shadow: 4px 0 20px -10px rgba(0, 0, 0, 0.2);
-          box-shadow: 4px 0 20px -10px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 4px 0 20px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 0 20px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
 }
 
@@ -45,11 +51,16 @@ nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-flex: wrap;
+  -ms-flex: wrap;
+  flex: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   list-style: none;
 }
 
@@ -66,69 +77,69 @@ nav {
   text-decoration: none;
 }
 
-.intro {
+#intro {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: wrap;
-      -ms-flex: wrap;
-          flex: wrap;
+  -ms-flex: wrap;
+  flex: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   width: 100%;
   background: url(../img/intro-bg.png) center bottom no-repeat;
   background-size: cover;
   padding: 200px 120px 120px 120px;
 }
 
-.intro .intro-item {
+#intro .intro-item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: wrap;
-      -ms-flex: wrap;
-          flex: wrap;
+  -ms-flex: wrap;
+  flex: wrap;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   width: 50%;
 }
 
-.intro .intro-item img {
+#intro .intro-item img {
   width: 80%;
 }
 
-.intro .intro-item h2 {
+#intro .intro-item h1 {
   color: #fff;
   margin-bottom: 40px;
   font-size: 48px;
   font-weight: 900;
 }
 
-.intro .intro-item h2 span {
+#intro .intro-item h1 span {
   color: #74b5fc;
   text-decoration: underline;
 }
 
-.intro .intro-item .buttons {
+#intro .intro-item .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-flex: wrap;
-      -ms-flex: wrap;
-          flex: wrap;
+  -ms-flex: wrap;
+  flex: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
   width: 100%;
 }
 
-.intro .intro-item .buttons button {
+#intro .intro-item .buttons button {
   font-family: "Montserrat", sans-serif;
   font-size: 14px;
   font-weight: 600;
@@ -142,13 +153,13 @@ nav {
   cursor: pointer;
 }
 
-.intro .intro-item .buttons button:first-child {
+#intro .intro-item .buttons button:first-child {
   border: 2px solid #007bff;
   background: #007bff;
   color: #fff;
 }
 
-.intro .intro-item .buttons button:first-child:hover {
+#intro .intro-item .buttons button:first-child:hover {
   border: 2px solid #fff;
   color: #007bff;
   background: transparent;
@@ -157,16 +168,80 @@ nav {
   color: #fff;
 }
 
-.intro .intro-item .buttons button:last-child {
+#intro .intro-item .buttons button:last-child {
   border: 2px solid #fff;
   background: transparent;
   color: #fff;
 }
 
-.intro .intro-item .buttons button:last-child:hover {
+#intro .intro-item .buttons button:last-child:hover {
   border: 2px solid #007bff;
   background: #007bff;
   -webkit-transition: 1s;
   transition: 1s;
+}
+
+#about {
+  background: #fff;
+  padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+  -ms-flex: wrap;
+  flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+#about .about-header {
+  text-align: center;
+}
+
+#about .about-header h2 {
+  font-size: 36px;
+  color: #283d50;
+  font-weight: 600;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+#about .about-header p {
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+  width: 40%;
+}
+
+#about .about-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+  -ms-flex: wrap;
+  flex: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  position: relative;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+#about .about-row .about-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+  -ms-flex: wrap;
+  flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 /*# sourceMappingURL=style.css.map */
