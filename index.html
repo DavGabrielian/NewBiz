@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/94fb0770e8.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/styles/style.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      media="all and (max-width: 767px)"
+      href="assets/styles/media/media.css"
+    /> -->
+
+    <title>Newbiz</title>
+  </head>
+
+  <body>
+    <nav id="navbar" class="mobile-nav">
+      <div class="logo">
+        <img src="assets/img/logo.png" alt="logo" />
+      </div>
+      <a onclick="openMenu()" id="menu">&#9776;</a>
+      <div class="nav-list" id="list">
+        <a href="/" onclick="closeMenu()">Home</a>
+        <a href="#about" onclick="closeMenu()">About </a>
+        <a href="#service" onclick="closeMenu()">Services</a>
+        <a href="#portfolio" onclick="closeMenu()">Portfolio</a>
+        <a href="#team" onclick="closeMenu()">Team</a>
+        <a href="" onclick="closeMenu()">Drop Down</a>
+        <a href="#contact" onclick="closeMenu()">Contact Us</a>
+      </div>
+      <span onclick="closeMenu()" id="close">&#9783; </span>
+    </nav>
+
+    <section class="intro">
+      <div class="intro-item">
+        <h2>
+          We provide <br />
+          <span>solutions</span> <br />
+          for your business!
+        </h2>
+        <div class="buttons">
+          <button>Get Started</button>
+          <button>Our Services</button>
+        </div>
+      </div>
+      <div class="intro-item">
+        <img src="assets/img/intro-img.svg" alt="intro pic" />
+      </div>
+    </section>
+
+    <section></section>
+    <script src="assets/app.js"></script>
+  </body>
+</html>
