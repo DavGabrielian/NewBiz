@@ -68,8 +68,8 @@ nav {
 // INTRO SECTION
 
 #intro {
-  position: relative;
   @include flexbox(row);
+  position: relative;
   width: 100%;
   background: url(../img/intro-bg.png) center bottom no-repeat;
   background-size: cover;
@@ -85,10 +85,10 @@ nav {
     }
 
     h1 {
-      color: #fff;
       margin-bottom: 40px;
       font-size: 48px;
       font-weight: 900;
+      color: white;
       span {
         color: #74b5fc;
         text-decoration: underline;
@@ -167,7 +167,7 @@ nav {
   }
 }
 .about-row {
-  @include flexbox();
+  @include flexbox(row);
   position: relative;
   padding-right: 15px;
   padding-left: 15px;
@@ -238,4 +238,8 @@ nav {
       width: 40%;
     }
   }
+}
+
+@media all and (max-width: 767) {
+  @import "media/media";
 }
