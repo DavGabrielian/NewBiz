@@ -232,47 +232,77 @@ nav {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
-.about-img {
+.about-img > img {
   max-width: 100%;
   height: auto;
 }
 
 .about-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-flex: wrap;
-      -ms-flex: wrap;
-          flex: wrap;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-flex: 0;
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   max-width: 50%;
+  width: 100%;
 }
 
 .about-item p {
   padding: 0;
   margin: 0 0 30px 0;
   line-height: 26px;
+  width: 90%;
 }
 
-.list div {
-  padding: 0 0 30px 0;
+.about-item h5 {
+  font-weight: 600;
+  font-size: 24px;
+  margin: 0 0 20px 0;
+  padding: 0;
 }
 
-.list div i {
+.list div .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   float: left;
   background: #fff;
   width: 64px;
   height: 64px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.list div .icon .fa-shopping-bag {
+  color: #007bff;
+  font-size: 25px;
+}
+
+.list div .icon .fa-image {
+  color: #007bff;
+  font-size: 25px;
+}
+
+.list div .icon .fa-chart-bar {
+  color: #007bff;
+  font-size: 25px;
 }
 
 .list div h4 {
@@ -287,6 +317,7 @@ nav {
   margin-left: 80px;
   line-height: 24px;
   font-size: 14px;
+  width: 85%;
 }
 
 #service {

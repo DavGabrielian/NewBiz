@@ -169,35 +169,64 @@ nav {
 .about-row {
   @include flexbox(row);
   position: relative;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-right: auto;
+  margin-left: auto;
 }
-.about-img {
+
+.about-img > img {
   max-width: 100%;
   height: auto;
 }
 
 .about-item {
-  @include flexbox(row);
   flex: 0 0 50%;
   max-width: 50%;
+  width: 100%;
 
   p {
     padding: 0;
     margin: 0 0 30px 0;
     line-height: 26px;
+    width: 90%;
+  }
+
+  h5 {
+    font-weight: 600;
+    font-size: 24px;
+    margin: 0 0 20px 0;
+    padding: 0;
   }
 }
 
 .list {
   div {
-    padding: 0 0 30px 0;
-
-    i {
+    .icon {
+      display: flex;
       float: left;
       background: #fff;
       width: 64px;
       height: 64px;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      border-radius: 50%;
+      border: 2px solid #007bff;
+      transition: all 0.3s ease-in-out;
+      .fa-shopping-bag {
+        color: #007bff;
+        font-size: 25px;
+      }
+      .fa-image {
+        color: #007bff;
+        font-size: 25px;
+      }
+      .fa-chart-bar {
+        color: #007bff;
+        font-size: 25px;
+      }
     }
 
     h4 {
@@ -212,6 +241,7 @@ nav {
       margin-left: 80px;
       line-height: 24px;
       font-size: 14px;
+      width: 85%;
     }
   }
 }
