@@ -188,6 +188,7 @@ nav {
 #about {
   background: #fff;
   padding: 60px 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -198,6 +199,10 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #about .about-header {
@@ -217,7 +222,7 @@ nav {
   font-size: 15px;
   padding-bottom: 60px;
   color: #556877;
-  width: 40%;
+  width: 50%;
 }
 
 .about-row {
@@ -232,10 +237,7 @@ nav {
       -ms-flex-direction: row;
           flex-direction: row;
   position: relative;
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-bottom: 2rem;
 }
 
 .about-img > img {
@@ -248,7 +250,9 @@ nav {
       -ms-flex: 0 0 50%;
           flex: 0 0 50%;
   max-width: 50%;
-  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 3rem;
 }
 
 .about-item p {
@@ -321,7 +325,7 @@ nav {
 }
 
 #service {
-  background: #fff;
+  background: #ecf5ff;
   padding: 60px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -329,10 +333,15 @@ nav {
   -webkit-box-flex: wrap;
       -ms-flex: wrap;
           flex: wrap;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 #service .service-header {
@@ -352,7 +361,144 @@ nav {
   font-size: 15px;
   padding-bottom: 60px;
   color: #556877;
-  width: 40%;
+  width: 50%;
+}
+
+#service .service-items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#service .service-items > div {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+  padding: 30px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin: 0 10px 40px 10px;
+  background: #fff;
+  -webkit-box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+          box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#service .service-items > div .serv-icon {
+  position: absolute;
+  left: 10px;
+  top: calc(50% - 32px);
+}
+
+#service .service-items > div .serv-icon .fa-chart-pie {
+  font-size: 64px;
+  line-height: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #ff689b;
+}
+
+#service .service-items > div .serv-icon .fa-bookmark {
+  font-size: 64px;
+  line-height: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #e9bf06;
+}
+
+#service .service-items > div .serv-icon .fa-sticky-note {
+  font-size: 64px;
+  line-height: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #3fcdc7;
+}
+
+#service .service-items > div .serv-icon .fa-tachometer-alt {
+  font-size: 64px;
+  line-height: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #41cf2e;
+}
+
+#service .service-items > div .serv-icon .fa-globe {
+  font-size: 64px;
+  line-height: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #d6ff22;
+}
+
+#service .service-items > div .serv-icon .fa-clock {
+  font-size: 64px;
+  line-height: 1;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #4680ff;
+}
+
+#service .service-items > div h3 {
+  margin-left: 80px;
+  font-weight: 900;
+  margin-bottom: 15px;
+  font-size: 18px;
+}
+
+#service .service-items > div p {
+  font-size: 14px;
+  margin-left: 80px;
+  line-height: 24px;
+  margin-bottom: 0;
+}
+
+#choose {
+  padding: 60px 0;
+  background: #004a99;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#choose .choose-header {
+  text-align: center;
+}
+
+#choose .choose-header h2 {
+  font-size: 36px;
+  color: #fff;
+  font-weight: 600;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+#choose .choose-header p {
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #fff;
+  width: 50%;
 }
 
 @media all and (max-width: 767) {

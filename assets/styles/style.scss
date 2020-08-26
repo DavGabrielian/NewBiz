@@ -10,10 +10,23 @@ body {
   line-height: 1.2;
 }
 
+@mixin secMarPad {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 @mixin flexbox($way) {
   display: flex;
   flex: wrap;
   flex-direction: $way;
+}
+
+@mixin icon {
+  font-size: 64px;
+  line-height: 1;
+  transition: 0.5s;
 }
 
 .logo {
@@ -146,7 +159,9 @@ nav {
 #about {
   background: #fff;
   padding: 60px 0;
+  width: 100%;
   @include flexbox(column);
+  @include secMarPad;
 
   .about-header {
     text-align: center;
@@ -162,17 +177,14 @@ nav {
       font-size: 15px;
       padding-bottom: 60px;
       color: #556877;
-      width: 40%;
+      width: 50%;
     }
   }
 }
 .about-row {
   @include flexbox(row);
   position: relative;
-  padding-right: 30px;
-  padding-left: 30px;
-  margin-right: auto;
-  margin-left: auto;
+  padding-bottom: 2rem;
 }
 
 .about-img > img {
@@ -183,7 +195,9 @@ nav {
 .about-item {
   flex: 0 0 50%;
   max-width: 50%;
-  width: 100%;
+  padding-right: 30px;
+  padding-left: 30px;
+  padding-bottom: 3rem;
 
   p {
     padding: 0;
@@ -247,12 +261,15 @@ nav {
 }
 
 #service {
-  background: #fff;
+  background: #ecf5ff;
   padding: 60px 0;
-  @include flexbox(row);
+  @include flexbox(column);
+  width: 100%;
+  @include secMarPad;
 
   .service-header {
     text-align: center;
+
     h2 {
       font-size: 36px;
       color: #283d50;
@@ -265,7 +282,99 @@ nav {
       font-size: 15px;
       padding-bottom: 60px;
       color: #556877;
-      width: 40%;
+      width: 50%;
+    }
+  }
+
+  .service-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+
+    > div {
+      flex: 1 1 40%;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: 0 10px 40px 10px;
+      background: #fff;
+      box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+      transition: all 0.3s ease-in-out;
+
+      .serv-icon {
+        position: absolute;
+        left: 10px;
+        top: calc(50% - 32px);
+
+        .fa-chart-pie {
+          @include icon;
+          color: #ff689b;
+        }
+        .fa-bookmark {
+          @include icon;
+          color: #e9bf06;
+        }
+        .fa-sticky-note {
+          @include icon;
+          color: #3fcdc7;
+        }
+        .fa-tachometer-alt {
+          @include icon;
+          color: #41cf2e;
+        }
+        .fa-globe {
+          @include icon;
+          color: #d6ff22;
+        }
+        .fa-clock {
+          @include icon;
+          color: #4680ff;
+        }
+      }
+
+      h3 {
+        margin-left: 80px;
+        font-weight: 900;
+        margin-bottom: 15px;
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+        margin-left: 80px;
+        line-height: 24px;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+#choose {
+  padding: 60px 0;
+  background: #004a99;
+  width: 100%;
+  @include flexbox(column);
+  @include secMarPad;
+
+  .choose-header {
+    text-align: center;
+
+    h2 {
+      font-size: 36px;
+      color: #fff;
+      font-weight: 600;
+      position: relative;
+      margin: 0 0 20px 0;
+    }
+    p {
+      margin: auto;
+      font-size: 15px;
+      padding-bottom: 60px;
+      color: #fff;
+      width: 50%;
     }
   }
 }
