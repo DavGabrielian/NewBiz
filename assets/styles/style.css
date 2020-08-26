@@ -659,11 +659,27 @@ nav {
 }
 
 #portfolio .portfolio-header > div {
-  margin: auto;
-  font-size: 15px;
-  padding-bottom: 60px;
-  color: #fff;
-  width: 40%;
+  padding: 0;
+  margin: 5px 0 35px 0;
+  list-style: none;
+  text-align: center;
+}
+
+#portfolio .portfolio-header > div button {
+  cursor: pointer;
+  margin: 15px 15px 15px 0;
+  display: inline-block;
+  padding: 6px 20px;
+  font-size: 12px;
+  line-height: 20px;
+  color: #007bff;
+  border-radius: 50px;
+  text-transform: uppercase;
+  background: #ecf5ff;
+  margin-bottom: 5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  border: none;
 }
 
 @media all and (max-width: 767) {

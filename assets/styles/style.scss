@@ -483,8 +483,6 @@ nav {
   }
 }
 
-
-
 #portfolio {
   padding: 60px 0;
   width: 100%;
@@ -501,17 +499,28 @@ nav {
       margin: 0 0 20px 0;
     }
     > div {
-      margin: auto;
-      font-size: 15px;
-      padding-bottom: 60px;
-      color: #fff;
-      width: 40%;
+      padding: 0;
+      margin: 5px 0 35px 0;
+      list-style: none;
+      text-align: center;
 
       button {
+        cursor: pointer;
+        margin: 15px 15px 15px 0;
+        display: inline-block;
+        padding: 6px 20px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #007bff;
+        border-radius: 50px;
+        text-transform: uppercase;
+        background: #ecf5ff;
+        margin-bottom: 5px;
+        transition: all 0.3s ease-in-out;
+        border: none;
       }
     }
   }
-
 }
 
 @media all and (max-width: 767) {
