@@ -215,3 +215,27 @@ nav {
     }
   }
 }
+
+#service {
+  background: #fff;
+  padding: 60px 0;
+  @include flexbox(row);
+
+  .service-header {
+    text-align: center;
+    h2 {
+      font-size: 36px;
+      color: #283d50;
+      font-weight: 600;
+      position: relative;
+      margin: 0 0 20px 0;
+    }
+    p {
+      margin: auto;
+      font-size: 15px;
+      padding-bottom: 60px;
+      color: #556877;
+      width: 40%;
+    }
+  }
+}
