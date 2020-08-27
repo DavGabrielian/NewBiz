@@ -665,6 +665,11 @@ nav {
   text-align: center;
 }
 
+#portfolio .portfolio-header > div :first-child {
+  background: #007bff;
+  color: #ecf5ff;
+}
+
 #portfolio .portfolio-header > div button {
   cursor: pointer;
   margin: 15px 15px 15px 0;
@@ -673,13 +678,326 @@ nav {
   font-size: 12px;
   line-height: 20px;
   color: #007bff;
-  border-radius: 50px;
-  text-transform: uppercase;
   background: #ecf5ff;
+  border-radius: 50px;
   margin-bottom: 5px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   border: none;
+}
+
+#portfolio .portfolio-items {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#portfolio .portfolio-items > div {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  max-width: 30%;
+  height: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+#portfolio .portfolio-items > div:hover {
+  opacity: 0.8;
+}
+
+#portfolio .portfolio-items > div:hover .portfolio-info {
+  opacity: 1;
+}
+
+#portfolio .portfolio-items > div > img {
+  border-radius: 10px;
+  max-width: 90%;
+  height: auto;
+}
+
+#portfolio .portfolio-items > div .portfolio-info {
+  position: absolute;
+  top: 6px;
+  right: 16px;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+#portfolio .portfolio-items > div .portfolio-info > h4 {
+  font-size: 22px;
+  font-weight: 700;
+  color: white;
+}
+
+#portfolio .portfolio-items > div .portfolio-info > p {
+  font-size: 15px;
+  padding: 0;
+  margin: 0;
+  color: #e2effe;
+  font-weight: 900;
+}
+
+#portfolio .portfolio-items > div .portfolio-info > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#portfolio .portfolio-items > div .portfolio-info > div > div {
+  position: relative;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  background: #007bff;
+  border-radius: 50%;
+}
+
+#portfolio .portfolio-items > div .portfolio-info > div > div .fa-eye {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  bottom: 0;
+  left: 6px;
+  font-size: 22px;
+  color: #fff;
+}
+
+#portfolio .portfolio-items > div .portfolio-info > div > div .fa-external-link-alt {
+  position: absolute;
+  top: 6px;
+  right: 0;
+  bottom: 0;
+  left: 6px;
+  font-size: 22px;
+  color: #fff;
+}
+
+#testim {
+  background: #ecf5ff;
+  padding: 60px 0;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#testim h2 {
+  font-size: 36px;
+  color: #283d50;
+  text-align: center;
+  font-weight: 500;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+#testim > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+#testim > div .testim-item {
+  margin-bottom: 30px;
+  width: 60%;
+}
+
+#testim > div .testim-item img {
+  width: 120px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  float: left;
+  margin: 10px;
+}
+
+#testim > div .testim-item h5 {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px 0 5px 0;
+  color: #111;
+}
+
+#testim > div .testim-item span {
+  font-size: 14px;
+  color: #999;
+  margin: 0 0 5px 0;
+}
+
+#testim > div .testim-item blockquote {
+  font-style: italic;
+}
+
+#team {
+  padding: 60px 0;
+  background: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#team .team-header {
+  text-align: center;
+}
+
+#team .team-header h2 {
+  font-size: 36px;
+  color: #283d50;
+  font-weight: 600;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+#team .team-header p {
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+  width: 40%;
+}
+
+#client {
+  background: #ecf5ff;
+  padding: 60px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#client .client-header {
+  text-align: center;
+}
+
+#client .client-header h2 {
+  font-size: 36px;
+  color: #283d50;
+  font-weight: 600;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+#client .client-header p {
+  margin: auto;
+  font-size: 15px;
+  padding-bottom: 60px;
+  color: #556877;
+  width: 50%;
+}
+
+#contact {
+  padding: 60px 0;
+  background: #fff;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#contact .contact-header {
+  text-align: center;
+}
+
+#contact .contact-header h2 {
+  font-size: 36px;
+  color: #283d50;
+  font-weight: 600;
+  position: relative;
+  margin: 0 0 20px 0;
+}
+
+footer {
+  background: #00428a;
+  color: #fff;
+  text-align: center;
+  padding: 3rem;
 }
 
 @media all and (max-width: 767) {
