@@ -982,6 +982,166 @@ nav {
   }
 }
 
+#links {
+  background: #004a99;
+  color: #eee;
+  font-size: 14px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  div {
+    background: #004a99;
+    padding: 60px 0 30px 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @mixin footBlock {
+    position: relative;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .biz-block {
+    flex: 0 0 25%;
+    max-width: 33%;
+    @include footBlock();
+    h3 {
+      font-size: 34px;
+      margin: 0 0 20px 0;
+      padding: 2px 0 2px 0;
+      line-height: 1;
+      font-family: "Montserrat", sans-serif;
+      color: #fff;
+      font-weight: 400;
+      letter-spacing: 3px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 24px;
+      margin-bottom: 0;
+      color: #ecf5ff;
+    }
+  }
+
+  .links-block {
+    flex: 0 0 17%;
+    max-width: 17%;
+    @include footBlock();
+
+    h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 10px;
+      margin: 0 0 20px 0;
+    }
+
+    ul {
+      list-style: none;
+
+      li {
+        padding: 8px 0;
+      }
+    }
+  }
+
+  .contactus-block {
+    @include footBlock();
+    flex: 0 0 25%;
+    max-width: 25%;
+
+    h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    .icons {
+      margin-top: 15px;
+      > a {
+        transition: none;
+        color: #fff;
+        text-decoration: none;
+        background-color: transparent;
+        font-size: 18px;
+        margin: 0 2px;
+      }
+    }
+  }
+  .social {
+    color: #eee;
+    font-size: 14px;
+    a {
+      font-size: 18px;
+      display: inline-block;
+      background: #007bff;
+      color: #fff;
+      line-height: 1;
+      padding: 8px 0;
+      margin-right: 4px;
+      border-radius: 50%;
+      text-align: center;
+      width: 36px;
+      height: 20px;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+  }
+
+  .news-block {
+    @include footBlock();
+    flex: 0 0 30%;
+    max-width: 35%;
+
+    h4 {
+      font-size: 14px;
+      font-weight: bold;
+      color: #fff;
+      text-transform: uppercase;
+      position: relative;
+      padding-bottom: 10px;
+    }
+
+    p {
+      font-size: 13px;
+      line-height: 24px;
+      margin-bottom: 0;
+      color: #ecf5ff;
+    }
+
+    .footer-form {
+      @include flexbox(row);
+      width: 100%;
+      height: 40px;
+
+      input {
+        border: 0;
+        padding: 6px 8px;
+        width: 60%;
+      }
+
+      button {
+        background: #007bff;
+        border: 0;
+        width: 30%;
+        padding: 6px 0;
+        text-align: center;
+        color: #fff;
+        transition: 0.3s;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 footer {
   background: #00428a;
   color: #fff;
