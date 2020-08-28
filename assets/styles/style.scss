@@ -42,6 +42,7 @@ body {
     display: none;
   }
   > span {
+    font-size: 25px;
     display: none;
     z-index: 1;
   }
@@ -102,6 +103,7 @@ nav {
       font-size: 48px;
       font-weight: 900;
       color: white;
+
       span {
         color: #74b5fc;
         text-decoration: underline;
@@ -1147,8 +1149,4 @@ footer {
   color: #fff;
   text-align: center;
   padding: 3rem;
-}
-
-@media all and (max-width: 767) {
-  @import "media/media";
 }

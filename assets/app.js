@@ -3,7 +3,7 @@ let close = document.getElementById("close");
 
 openMenu = () => {
   if ((menu.style.display = "block")) {
-    (document.getElementById("list").style.display = "flex") &&
+    (document.getElementById("list").style.display = "block") &&
       (document.getElementById("menu").style.display = "none") &&
       (document.getElementById("close").style.display = "block");
   }

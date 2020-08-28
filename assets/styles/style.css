@@ -21,6 +21,7 @@ body {
 }
 
 .mobile-nav > span {
+  font-size: 25px;
   display: none;
   z-index: 1;
 }

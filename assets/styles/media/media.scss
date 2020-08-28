@@ -1,0 +1,84 @@
+@mixin flexbox($way) {
+  display: flex;
+  flex: wrap;
+  flex-direction: $way;
+}
+
+.logo {
+  img {
+    padding: 1px;
+    margin: 7px 0;
+    max-height: 26px;
+    width: 50%;
+  }
+}
+
+.mobile-nav {
+  a {
+    display: block;
+    position: relative;
+    width: auto;
+    font-size: 25px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    padding: 1.6rem;
+
+    span {
+      display: none;
+      position: relative;
+      width: auto;
+      height: 30px;
+      font-size: 25px;
+      color: black;
+      background-color: white;
+      cursor: pointer;
+      right: 5.4rem;
+      top: 1.5rem;
+    }
+  }
+  .nav-list {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow-y: auto;
+    width: 260px;
+    padding-top: 18px;
+    background: rgba(19, 39, 57, 0.8);
+    transition: 0.4s;
+
+    a {
+      display: block;
+      position: relative;
+      color: #ffffff;
+      background: transparent;
+      padding: 15px 15px;
+      transition: 0.3s;
+      font-size: 16px;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      text-decoration: none;
+    }
+  }
+}
+
+#intro {
+  @include flexbox(column-reverse);
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 150px 20px 100px 20px;
+  align-items: center;
+
+  .intro-item {
+    width: 80%;
+    img {
+      width: 90%;
+    }
+  }
+}
