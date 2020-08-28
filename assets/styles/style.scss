@@ -574,7 +574,6 @@ nav {
         }
         > p {
           font-size: 15px;
-
           padding: 0;
           margin: 0;
           color: #e2effe;
@@ -669,13 +668,11 @@ nav {
   }
 }
 
-
 #team {
   padding: 60px 0;
   background: #fff;
   width: 100%;
   @include flexbox(column);
-  @include secMarPad;
 
   .team-header {
     text-align: center;
@@ -695,12 +692,77 @@ nav {
       width: 40%;
     }
   }
+  .team-block {
+    @include flexbox(row);
+    justify-content: center;
+    padding-left: 2%;
+    padding-right: 2%;
 
+    div {
+      margin-left: 6px;
+      margin-right: 6px;
 
+      > .member {
+        text-align: center;
+        margin-bottom: 20px;
+        position: relative;
+        border-radius: 50%;
+        cursor: pointer;
+        &:hover .member-info {
+          margin-top: 50px;
+          transition: margin 0.5s;
+          opacity: 1;
+        }
+        &:hover img {
+          opacity: 0.7;
+        }
 
+        > img {
+          max-width: 100%;
+          height: auto;
+        }
 
+        .member-info {
+          @include flexbox(column);
+          justify-content: center;
+          align-items: center;
+          position: absolute;
+          bottom: 0;
+          top: 0;
+          left: 0;
+          right: 0;
+          transition: 0.2s;
+          opacity: 0;
+
+          > h4 {
+            font-weight: 700;
+            margin-bottom: 2px;
+            font-size: 18px;
+            color: #fff;
+          }
+
+          > span {
+            font-style: italic;
+            display: block;
+            font-size: 13px;
+            color: #fff;
+          }
+          .icons {
+            margin-top: 15px;
+            > a {
+              transition: none;
+              color: #fff;
+              text-decoration: none;
+              background-color: transparent;
+              font-size: 18px;
+              margin: 0 2px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
-
 
 #client {
   background: #ecf5ff;
@@ -727,10 +789,7 @@ nav {
       width: 50%;
     }
   }
-
-
 }
-
 
 #contact {
   padding: 60px 0;
@@ -749,19 +808,11 @@ nav {
       position: relative;
       margin: 0 0 20px 0;
     }
-
-
   }
-
-
 }
 
-
-
-
-
 footer {
-  background:#00428a;
+  background: #00428a;
   color: #fff;
   text-align: center;
   padding: 3rem;
