@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+  transition: 1s;
 }
 
 body {
@@ -91,7 +93,6 @@ nav {
 
   .intro-item {
     @include flexbox(column);
-
     width: 50%;
 
     img {
@@ -101,7 +102,7 @@ nav {
     h1 {
       margin-bottom: 40px;
       font-size: 48px;
-      font-weight: 900;
+      font-weight: bolder;
       color: white;
 
       span {
@@ -112,7 +113,6 @@ nav {
 
     .buttons {
       @include flexbox(row);
-
       width: 100%;
 
       button {
@@ -163,7 +163,6 @@ nav {
   padding: 60px 0;
   width: 100%;
   @include flexbox(column);
-  @include secMarPad;
 
   .about-header {
     text-align: center;
@@ -189,6 +188,12 @@ nav {
   padding-bottom: 2rem;
 }
 
+.about-reverse-row {
+  @include flexbox(row-reverse);
+  position: relative;
+  padding-bottom: 2rem;
+}
+
 .about-img > img {
   max-width: 100%;
   height: auto;
@@ -197,11 +202,12 @@ nav {
 .about-item {
   flex: 0 0 50%;
   max-width: 50%;
-  padding-right: 30px;
-  padding-left: 30px;
+  padding-right: 20px;
+  padding-left: 20px;
   padding-bottom: 3rem;
 
   p {
+    font-size: 1rem;
     padding: 0;
     margin: 0 0 30px 0;
     line-height: 26px;
@@ -267,7 +273,6 @@ nav {
   padding: 60px 0;
   @include flexbox(column);
   width: 100%;
-  @include secMarPad;
 
   .service-header {
     text-align: center;
@@ -304,12 +309,17 @@ nav {
       margin: 0 10px 40px 10px;
       background: #fff;
       box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-      transition: all 0.3s ease-in-out;
+      transition: 0.5s ease-in-out;
+      bottom: 0px;
+      cursor: pointer;
+      &:hover {
+        background: rgb(200, 200, 200);
+        bottom: 10px;
+      }
 
       .serv-icon {
         position: absolute;
         left: 10px;
-        top: calc(50% - 32px);
 
         .fa-chart-pie {
           @include icon;
@@ -359,7 +369,6 @@ nav {
   background: #004a99;
   width: 100%;
   @include flexbox(column);
-  @include secMarPad;
 
   .choose-header {
     text-align: center;
@@ -384,18 +393,15 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    padding-left: 10%;
-    padding-right: 10%;
 
     > div {
       display: flex;
       flex-wrap: wrap;
-      margin-right: -15px;
-      margin-left: -15px;
 
       .choose-items {
+        position: relative;
         flex: 0 0 30%;
-        max-width: 30%;
+        max-width: 29%;
         background: #00458f;
         border-color: #00458f;
         border-radius: 10px;
@@ -403,8 +409,14 @@ nav {
         padding: 15px 0;
         text-align: center;
         color: #fff;
-        transition: 0.3s ease-in-out;
         margin-bottom: 1.5rem;
+        transition: 0.5s ease-in-out;
+        bottom: 0px;
+        cursor: pointer;
+        &:hover {
+          background: #013a77;
+          bottom: 10px;
+        }
 
         .fa-gem {
           font-size: 48px;
@@ -461,8 +473,6 @@ nav {
       padding-top: 40px;
       display: flex;
       flex-wrap: wrap;
-      margin-right: 15px;
-      margin-left: 15px;
       width: 100%;
 
       > div {
@@ -489,7 +499,6 @@ nav {
   padding: 60px 0;
   width: 100%;
   @include flexbox(column);
-  @include secMarPad;
 
   .portfolio-header {
     text-align: center;
@@ -552,7 +561,7 @@ nav {
 
       > img {
         border-radius: 10px;
-        max-width: 90%;
+        max-width: 100%;
         height: auto;
       }
 
@@ -567,7 +576,6 @@ nav {
         flex-direction: column;
         align-items: center;
         opacity: 0;
-        transition: 0.2s linear;
 
         > h4 {
           font-size: 22px;
@@ -622,7 +630,6 @@ nav {
   padding: 60px 0;
   width: 100%;
   @include flexbox(column);
-  @include secMarPad;
 
   h2 {
     font-size: 36px;
@@ -660,7 +667,7 @@ nav {
       span {
         font-size: 14px;
         color: #999;
-        margin: 0 0 5px 0;
+        padding: 0 0 15px 0;
       }
 
       blockquote {
@@ -988,8 +995,7 @@ nav {
   background: #004a99;
   color: #eee;
   font-size: 14px;
-  padding-right: 15px;
-  padding-left: 15px;
+
   margin-right: auto;
   margin-left: auto;
 
@@ -1007,10 +1013,10 @@ nav {
     padding-left: 15px;
   }
   .biz-block {
-    flex: 0 0 25%;
-    max-width: 33%;
+    flex: 0 0 20%;
+    max-width: 29%;
     @include footBlock();
-    h3 {
+    h1 {
       font-size: 34px;
       margin: 0 0 20px 0;
       padding: 2px 0 2px 0;
@@ -1078,9 +1084,11 @@ nav {
       }
     }
   }
+
   .social {
     color: #eee;
     font-size: 14px;
+
     a {
       font-size: 18px;
       display: inline-block;
@@ -1150,3 +1158,281 @@ footer {
   text-align: center;
   padding: 3rem;
 }
+
+@media all and (max-width: 767px) {
+   
+  .logo {
+    img {
+      padding: 1px;
+      margin: 7px 0;
+      max-height: 26px;
+      width: 50%;
+    }
+  }
+  
+  .mobile-nav {
+    a {
+      display: block;
+      position: relative;
+      width: auto;
+      font-size: 25px;
+      color: black;
+      background-color: white;
+      cursor: pointer;
+      padding: 0.5rem;
+  
+      span {
+        display: none;
+        position: relative;
+        width: auto;
+        height: 30px;
+        font-size: 25px;
+        color: black;
+        background-color: white;
+        cursor: pointer;
+        right: 5.4rem;
+        top: 1.5rem;
+      }
+    }
+    .nav-list {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 9999;
+      overflow-y: auto;
+      width: 260px;
+      padding-top: 18px;
+      background: rgba(19, 39, 57, 0.8);
+      transition: 0.4s;
+  
+      a {
+        display: block;
+        position: relative;
+        color: #ffffff;
+        background: transparent;
+        padding: 15px 15px;
+        transition: 0.3s;
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 500;
+        text-decoration: none;
+      }
+    }
+  }
+  
+  #intro {
+    @include flexbox(column-reverse);
+    width: 100%;
+    padding: 150px 20px 10px 20px;
+    align-items: center;
+    .intro-item {
+      width: 100%;
+      img {
+        width: 90%;
+      }
+      h1 {
+        width: 90%;
+        text-align: center;
+        font-size: 34px;
+        padding-bottom: 30px;
+      }
+    }
+    .buttons {
+      justify-content: center;
+    }
+  }
+  
+  #about {
+    .about-header {
+      p {
+        width: 80%;
+      }
+    }
+    .about-row {
+      @include flexbox(column-reverse);
+    }
+  
+    .about-reverse-row {
+      @include flexbox(column-reverse);
+    }
+  
+    .about-img > img {
+      padding: 2.5rem;
+      max-width: 80%;
+      height: auto;
+    }
+  
+    .about-item {
+      padding-right: 15px;
+      padding-left: 15px;
+      max-width: 100%;
+      p {
+        width: 100%;
+        font-size: 1.02rem;
+      }
+    }
+  
+    .list {
+      div {
+        p {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+  
+  #service {
+    .service-header {
+      p {
+        width: 90%;
+      }
+    }
+    .service-items {
+      padding-left: 1%;
+      padding-right: 1%;
+    }
+  }
+  
+  #choose {
+    .choose-header {
+      p {
+        width: 90%;
+      }
+    }
+  
+    .choose-block {
+      padding-left: 1%;
+      padding-right: 1%;
+      > div {
+        align-content: center;
+        @include flexbox(column);
+  
+        .choose-items {
+          flex: 0 0 30%;
+          max-width: 100%;
+        }
+      }
+      .numbers {
+        @include flexbox(row);
+        max-width: 100%;
+        > div {
+          flex: 0 0 50%;
+          max-width: 50%;
+        }
+      }
+    }
+  }
+  
+  #portfolio {
+    .portfolio-items {
+      > div {
+        flex: 0 0 90%;
+        max-width: 100%;
+      }
+    }
+  }
+  
+  #testim {
+    .testim-block {
+      @include flexbox(column);
+      .testim-item {
+        width: 80%;
+        text-align: center;
+        @include flexbox(column);
+        img {
+          float: none;
+          margin: auto;
+        }
+      }
+    }
+  }
+  
+  #team {
+    .team-header {
+      p {
+        width: 85%;
+      }
+    }
+    .team-block {
+      @include flexbox(column);
+    }
+  }
+  
+  #client {
+    .client-header {
+      p {
+        width: 85%;
+      }
+    }
+    .client-block {
+      @include flexbox(column);
+      .client-item {
+        flex: 0 0 55%;
+        max-width: 100%;
+      }
+    }
+  }
+  
+  #contact {
+    .contact-block {
+      @include flexbox(column);
+      .contact-item {
+        margin-top: 20px;
+        flex: 1;
+        max-width: 93%;
+        div {
+          @include flexbox(column);
+          div {
+            @include flexbox(row);
+            flex: 1;
+            max-width: 90%;
+          }
+        }
+      }
+    }
+    .submit {
+      background: #007bff;
+      border: 0;
+      border-radius: 20px;
+      padding: 8px 20px;
+      color: #fff;
+      transition: 0.3s;
+      cursor: pointer;
+      align-self: center;
+      width: 40%;
+    }
+  }
+  
+  #links {
+    div {
+      @include flexbox(column);
+      padding: 20px 0 30px 0;
+    }
+    .biz-block {
+      flex: 1;
+      max-width: 90%;
+      h1 {
+        padding: 1rem;
+      }
+    }
+    .links-block {
+      flex: 1%;
+      max-width: 100%;
+    }
+  
+    .contactus-block {
+      flex: 1%;
+      max-width: 100%;
+    }
+    .social {
+      @include flexbox(row);
+    }
+    .news-block {
+      flex: 1%;
+      max-width: 98%;
+    }
+  }
+  
+  }
