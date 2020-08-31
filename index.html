@@ -16,13 +16,14 @@
     <title>Newbiz</title>
   </head>
 
-  <body>
+  <body >
     <nav id="navbar" class="mobile-nav">
       <div class="logo">
         <img src="assets/img/logo.png" alt="logo" />
       </div>
       <a onclick="openMenu()" id="menu">&#9776;</a>
       <div class="nav-list" id="list">
+        <span onclick="closeMenu()" class="closebtn" id="close">&times; </span>
         <a href="/" onclick="closeMenu()">Home</a>
         <a href="#about" onclick="closeMenu()">About </a>
         <a href="#service" onclick="closeMenu()">Services</a>
@@ -31,7 +32,6 @@
         <a href="" onclick="closeMenu()">Drop Down</a>
         <a href="#contact" onclick="closeMenu()">Contact Us</a>
       </div>
-      <span onclick="closeMenu()" id="close">&#9783; </span>
     </nav>
 
     <!-- INRO SECTION -->
@@ -336,6 +336,8 @@
   <div class="portfolio-items">
     <div>   
        <img src="assets/img/web1.jpg" alt="">
+       <div class="port-layer">
+
        <div class="portfolio-info">
         <h4>Web 2</h4>
         <p>WEB</p>
@@ -349,8 +351,11 @@
          </div>
       </div> 
     </div>
+    </div>
     <div>    
       <img src="assets/img/web3.jpg" alt="">
+      <div class="port-layer">
+
       <div class="portfolio-info">
         <h4>Web 2</h4>
         <p>WEB</p>
@@ -363,9 +368,12 @@
            </div>
          </div>
       </div>    
+      </div>
     </div>
     <div>   
        <img src="assets/img/app3.jpg" alt="">
+       <div class="port-layer">
+
        <div class="portfolio-info">
         <h4>Web 2</h4>
         <p>WEB</p>
@@ -378,9 +386,12 @@
            </div>
          </div>
       </div> 
+       </div>
      </div>
      <div>  
       <img src="assets/img/card3.jpg" alt="">
+      <div class="port-layer">
+
       <div class="portfolio-info">
         <h4>Web 2</h4>
         <p>WEB</p>
@@ -393,24 +404,30 @@
            </div>
          </div>
       </div> 
+      </div>
+
      </div>
   <div> 
        <img src="assets/img/card1.jpg" alt="">
-       <div class="portfolio-info">
-        <h4>Web 2</h4>
-        <p>WEB</p>
-         <div>
+       <div class="port-layer">
+         <div class="portfolio-info">
+           <h4>Web 2</h4>
+           <p>WEB</p>
            <div>
-             <i class="fas fa-eye"></i>
-           </div>
-           <div>
-             <i class="fas fa-external-link-alt"></i>
-           </div>
-         </div>
-      </div> 
+             <div>
+               <i class="fas fa-eye"></i>
+              </div>
+              <div>
+                <i class="fas fa-external-link-alt"></i>
+              </div>
+            </div>
+          </div> 
+        </div>
         </div>
      <div>  
       <img src="assets/img/web1.jpg" alt="">
+      <div class="port-layer">
+
       <div class="portfolio-info">
         <h4>Web 2</h4>
         <p>WEB</p>
@@ -422,26 +439,14 @@
              <i class="fas fa-external-link-alt"></i>
            </div>
          </div>
-      </div>   
+      </div>  
+      </div> 
      </div>
   
     <div> 
          <img src="assets/img/web2.jpg" alt="">
-         <div class="portfolio-info">
-          <h4>Web 2</h4>
-          <p>WEB</p>
-           <div>
-             <div>
-               <i class="fas fa-eye"></i>
-             </div>
-             <div>
-               <i class="fas fa-external-link-alt"></i>
-             </div>
-           </div>
-        </div> 
-      </div>
-    <div> 
-         <img src="assets/img/card2.jpg" alt="">
+         <div class="port-layer">
+
          <div class="portfolio-info">
           <h4>Web 2</h4>
           <p>WEB</p>
@@ -455,9 +460,30 @@
            </div>
         </div> 
         </div>
+      </div>
+    <div> 
+         <img src="assets/img/card2.jpg" alt="">
+         <div class="port-layer">
+
+         <div class="portfolio-info">
+          <h4>Web 2</h4>
+          <p>WEB</p>
+           <div>
+             <div>
+               <i class="fas fa-eye"></i>
+             </div>
+             <div>
+               <i class="fas fa-external-link-alt"></i>
+             </div>
+           </div>
+        </div> 
+        </div>
+        </div>
         
     <div>    
       <img src="assets/img/app2.jpg" alt="">
+      <div class="port-layer">
+
       <div class="portfolio-info">
         <h4>Web 2</h4>
         <p>WEB</p>
@@ -470,6 +496,7 @@
            </div>
          </div>
       </div> 
+      </div>
         </div>
 
 
@@ -517,8 +544,9 @@
   <div class='team-block'>
     <div>
       <div class="member">
-
-        <img src="assets/img/team-1.jpg" alt="team1">
+        <img src="assets/img/team-1.jpg" alt="team1"/>
+        <div class="layer">
+        
         <div class="member-info">
           <h4>Walter White</h4>
           <span>Chief Executive Officer</span>
@@ -539,29 +567,34 @@
           </div>  
         </div>
       </div>
+
+      </div>
       </div>
     <div>
       <div class="member">
 
         <img src="assets/img/team-2.jpg" alt="team1">
+        <div class="layer">
+
         <div class="member-info">
           <h4>Sarah Jhonson</h4>
           <span> Product Manager</span>
           <div class="icons">
-            <a href="">
+            <a >
               <i class="fa fa-twitter"></i>
             </a>
-            <a href="">
+            <a >
               <i class="fa fa-facebook"></i>
             </a>
-            <a href="">
+            <a >
               <i class="fa fa-google-plus"></i>
             </a>
-            <a href="">
+            <a >
               <i class="fa fa-linkedin"></i>
             </a>
             
           </div>  
+        </div>
         </div>
       </div>
       </div>
@@ -569,24 +602,27 @@
         <div class="member">
 
         <img src="assets/img/team-3.jpg" alt="team1">
+        <div class="layer">
+
         <div class="member-info">
           <h4>William Anderson</h4>
           <span>CTO</span>
           <div class="icons">
-            <a href="">
+            <a >
                 <i class="fa fa-twitter"></i>
             </a>
-            <a href="">
+            <a >
                 <i class="fa fa-facebook"></i>
             </a>
-            <a href="">
+            <a >
                 <i class="fa fa-google-plus"></i>
             </a>
-            <a href="">
+            <a >
                 <i class="fa fa-linkedin"></i>
             </a>
   
           </div>  
+        </div>
         </div>
       </div>
 
@@ -595,24 +631,27 @@
           <div class="member">
 
           <img src="assets/img/team-4.jpg" alt="team1">
+          <div class="layer">
+
           <div class="member-info">
             <h4>Amanda Jepson</h4>
             <span>Accountant</span>
             <div class="icons">
-              <a href="">
+              <a >
                   <i class="fa fa-twitter"></i>
               </a>
-              <a href="">
+              <a >
                   <i class="fa fa-facebook"></i>
               </a>
-              <a href="">
+              <a >
                   <i class="fa fa-google-plus"></i>
               </a>
-              <a href="">
+              <a >
                   <i class="fa fa-linkedin"></i>
               </a>
     
             </div>  
+          </div>
           </div>
         </div>
 
@@ -744,8 +783,8 @@
   </p>
 </div>
 <div class="links-block">
-  <h4>USEFUL LINKS</h4>
-  <ul>
+  <ul >
+  <h4>USEFUL LINKS</h4> 
     <li>Home</li>
     <li>About us</li>
     <li>Services</li>
