@@ -41,8 +41,9 @@ nav {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1877,6 +1878,72 @@ footer {
         -ms-flex: 1%;
             flex: 1%;
     max-width: 98%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .logo img {
+    padding: 1px;
+    margin: 7px 0;
+    max-height: 40px;
+    width: 70%;
+  }
+  .mobile-nav a {
+    display: block;
+    position: relative;
+    width: auto;
+    font-size: 35px;
+    color: black;
+    background-color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  .mobile-nav .closebtn {
+    position: relative;
+    top: 0;
+    left: 80px;
+    display: block;
+    width: auto;
+    font-size: 65px;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem;
+  }
+  .mobile-nav .nav-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: wrap;
+        -ms-flex: wrap;
+            flex: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 9999;
+    overflow-y: auto;
+    width: 0;
+    padding-top: 18px;
+    background: rgba(19, 39, 57, 0.8);
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .mobile-nav .nav-list a {
+    display: block;
+    position: relative;
+    color: #ffffff;
+    background: transparent;
+    padding: 15px 15px;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    font-size: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    text-decoration: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
