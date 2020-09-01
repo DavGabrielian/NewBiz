@@ -1211,10 +1211,9 @@ nav {
 }
 
 #contact .contact-item div div p {
-  padding: 0 0 10px 36px;
+  padding: 0 0 10px 10px;
   line-height: 28px;
   font-size: 13px;
-  margin: 0 0 30px 0;
 }
 
 #contact .contact-form {

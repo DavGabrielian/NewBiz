@@ -889,6 +889,7 @@ nav {
         max-width: 50%;
         color: #283d50;
         position: relative;
+        
 
         @mixin formIcon {
           font-size: 25px;
@@ -910,10 +911,9 @@ nav {
         }
 
         p {
-          padding: 0 0 10px 36px;
+          padding: 0 0 10px 10px;
           line-height: 28px;
           font-size: 13px;
-          margin: 0 0 30px 0;
         }
       }
     }
