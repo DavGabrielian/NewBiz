@@ -31,6 +31,8 @@ body {
   transition: 0.5s;
 }
 
+$button-icon-color: $button-icon-color;
+
 .logo {
   img {
     padding: 0;
@@ -129,12 +131,12 @@ nav {
       }
 
       button:first-child {
-        border: 2px solid #007bff;
-        background: #007bff;
+        border: 2px solid $button-icon-color;
+        background: $button-icon-color;
         color: #fff;
         &:hover {
           border: 2px solid #fff;
-          color: #007bff;
+          color: $button-icon-color;
           background: transparent;
           transition: 1s;
           color: #fff;
@@ -147,8 +149,8 @@ nav {
         color: #fff;
 
         &:hover {
-          border: 2px solid #007bff;
-          background: #007bff;
+          border: 2px solid $button-icon-color;
+          background: $button-icon-color;
           transition: 1s;
         }
       }
@@ -235,18 +237,18 @@ nav {
       flex-direction: column;
       text-align: center;
       border-radius: 50%;
-      border: 2px solid #007bff;
+      border: 2px solid $button-icon-color;
       transition: all 0.3s ease-in-out;
       .fa-shopping-bag {
-        color: #007bff;
+        color: $button-icon-color;
         font-size: 25px;
       }
       .fa-image {
-        color: #007bff;
+        color: $button-icon-color;
         font-size: 25px;
       }
       .fa-chart-bar {
-        color: #007bff;
+        color: $button-icon-color;
         font-size: 25px;
       }
     }
@@ -517,7 +519,7 @@ nav {
       text-align: center;
 
       :first-child {
-        background: #007bff;
+        background: $button-icon-color;
         color: #ecf5ff;
       }
 
@@ -528,7 +530,7 @@ nav {
         padding: 6px 20px;
         font-size: 12px;
         line-height: 20px;
-        color: #007bff;
+        color: $button-icon-color;
         background: #ecf5ff;
         border-radius: 50px;
         margin-bottom: 5px;
@@ -599,7 +601,7 @@ nav {
             text-align: center;
             width: 36px;
             height: 36px;
-            background: #007bff;
+            background: $button-icon-color;
             border-radius: 50%;
 
             .fa-eye {
@@ -893,7 +895,7 @@ nav {
 
         @mixin formIcon {
           font-size: 25px;
-          color: #007bff;
+          color: $button-icon-color;
           float: left;
           line-height: 1;
         }
@@ -975,7 +977,7 @@ nav {
   }
 
   .submit {
-    background: #007bff;
+    background: $button-icon-color;
     border: 0;
     border-radius: 20px;
     padding: 8px 30px;
@@ -985,8 +987,8 @@ nav {
     align-self: center;
 
     &:hover {
-      border: 2px solid #007bff;
-      color: #007bff;
+      border: 2px solid $button-icon-color;
+      color: $button-icon-color;
       background: transparent;
       transition: 1s;
     }
@@ -1093,7 +1095,7 @@ nav {
     a {
       font-size: 18px;
       display: inline-block;
-      background: #007bff;
+      background: $button-icon-color;
       color: #fff;
       line-height: 1;
       padding: 8px 0;
@@ -1140,7 +1142,7 @@ nav {
       }
 
       button {
-        background: #007bff;
+        background: $button-icon-color;
         border: 0;
         width: 30%;
         padding: 6px 0;
@@ -1393,7 +1395,7 @@ footer {
     }
 
     .submit {
-      background: #007bff;
+      background: $button-icon-color;
       border: 0;
       border-radius: 20px;
       padding: 8px 20px;
