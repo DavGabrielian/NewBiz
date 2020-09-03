@@ -163,14 +163,14 @@ nav {
 }
 
 #intro .intro-item .buttons button:first-child {
-  border: 2px solid #007bff;
-  background: #007bff;
+  border: 2px solid #035cbb;
+  background: #035cbb;
   color: #fff;
 }
 
 #intro .intro-item .buttons button:first-child:hover {
   border: 2px solid #fff;
-  color: #007bff;
+  color: #035cbb;
   background: transparent;
   -webkit-transition: 1s;
   transition: 1s;
@@ -184,8 +184,8 @@ nav {
 }
 
 #intro .intro-item .buttons button:last-child:hover {
-  border: 2px solid #007bff;
-  background: #007bff;
+  border: 2px solid #035cbb;
+  background: #035cbb;
   -webkit-transition: 1s;
   transition: 1s;
 }
@@ -306,23 +306,23 @@ nav {
           flex-direction: column;
   text-align: center;
   border-radius: 50%;
-  border: 2px solid #007bff;
+  border: 2px solid #035cbb;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
 .list div .icon .fa-shopping-bag {
-  color: #007bff;
+  color: #035cbb;
   font-size: 25px;
 }
 
 .list div .icon .fa-image {
-  color: #007bff;
+  color: #035cbb;
   font-size: 25px;
 }
 
 .list div .icon .fa-chart-bar {
-  color: #007bff;
+  color: #035cbb;
   font-size: 25px;
 }
 
@@ -523,9 +523,6 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 #choose .choose-block > div {
@@ -534,6 +531,10 @@ nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 1rem;
 }
 
 #choose .choose-block > div .choose-items {
@@ -680,7 +681,7 @@ nav {
 }
 
 #portfolio .portfolio-header > div :first-child {
-  background: #007bff;
+  background: #035cbb;
   color: #ecf5ff;
 }
 
@@ -691,7 +692,7 @@ nav {
   padding: 6px 20px;
   font-size: 12px;
   line-height: 20px;
-  color: #007bff;
+  color: #035cbb;
   background: #ecf5ff;
   border-radius: 50px;
   margin-bottom: 5px;
@@ -794,7 +795,7 @@ nav {
   text-align: center;
   width: 36px;
   height: 36px;
-  background: #007bff;
+  background: #035cbb;
   border-radius: 50%;
 }
 
@@ -1191,21 +1192,21 @@ nav {
 
 #contact .contact-item div div .fa-map-marker-alt {
   font-size: 25px;
-  color: #007bff;
+  color: #035cbb;
   float: left;
   line-height: 1;
 }
 
 #contact .contact-item div div .fa-envelope {
   font-size: 25px;
-  color: #007bff;
+  color: #035cbb;
   float: left;
   line-height: 1;
 }
 
 #contact .contact-item div div .fa-phone-alt {
   font-size: 25px;
-  color: #007bff;
+  color: #035cbb;
   float: left;
   line-height: 1;
 }
@@ -1290,7 +1291,7 @@ nav {
 }
 
 #contact .submit {
-  background: #007bff;
+  background: #035cbb;
   border: 0;
   border-radius: 20px;
   padding: 8px 30px;
@@ -1304,8 +1305,8 @@ nav {
 }
 
 #contact .submit:hover {
-  border: 2px solid #007bff;
-  color: #007bff;
+  border: 2px solid #035cbb;
+  color: #035cbb;
   background: transparent;
   -webkit-transition: 1s;
   transition: 1s;
@@ -1428,7 +1429,7 @@ nav {
 #links .social a {
   font-size: 18px;
   display: inline-block;
-  background: #007bff;
+  background: #035cbb;
   color: #fff;
   line-height: 1;
   padding: 8px 0;
@@ -1491,7 +1492,7 @@ nav {
 }
 
 #links .news-block .footer-form button {
-  background: #007bff;
+  background: #035cbb;
   border: 0;
   width: 30%;
   padding: 6px 0;
@@ -1812,7 +1813,7 @@ footer {
     width: 90%;
   }
   #contact .submit {
-    background: #007bff;
+    background: #035cbb;
     border: 0;
     border-radius: 20px;
     padding: 8px 20px;

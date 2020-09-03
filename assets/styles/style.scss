@@ -31,7 +31,7 @@ body {
   transition: 0.5s;
 }
 
-$button-icon-color: $button-icon-color;
+$button-icon-color: #035cbb;
 
 .logo {
   img {
@@ -395,11 +395,12 @@ nav {
   .choose-block {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 
     > div {
       display: flex;
       flex-wrap: wrap;
+      justify-content: center;
+      padding-top: 1rem;
 
       .choose-items {
         position: relative;
@@ -891,7 +892,6 @@ nav {
         max-width: 50%;
         color: #283d50;
         position: relative;
-        
 
         @mixin formIcon {
           font-size: 25px;
